@@ -9,6 +9,9 @@ public class Aluno {
 
 
 
+
+    
+
     public void matricular(){
         System.out.println("Aluno: " + nome + " com o RA: " + ra + " Foi matriculado com sucesso!");
     }
