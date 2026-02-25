@@ -4,17 +4,20 @@ public class Conta {
 
     String conta;
     String agencia;
-    double saldo = 200;
+    double saldo;
     String nomeCliente;
+
    
     public int sacar (double valor){
-        if(saldo >= valor){
-            saldo = saldo - valor;
-             return 1;
-        }else if(saldo == 0){
+        if(saldo == 0){
             System.out.println("Não a saldo para ser sacado");
+            return 0;
+        }else{
+            saldo = saldo - valor;
+            System.out.println("Saque realizado com sucesso! Saldo atual: " + saldo);
+            return 1;
         }
-        return 0;
+        
     }
 
     public void depositar(double depositarDinheiro){

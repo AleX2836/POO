@@ -14,10 +14,10 @@ public class ComputadorTeste {
         teste.marca = teclado.nextLine();
 
         System.out.println("Digite a cor: " );
-        teste.cor = teclado.next();    
+        teste.cor = teclado.nextLine();    
 
         System.out.println("Digite o modelo: " );
-        teste.modelo = teclado.next();
+        teste.modelo = teclado.nextLine();
 
         System.out.println("Digite o numero de serie: " );
         teste.numeroSerie = teclado.nextLong();
